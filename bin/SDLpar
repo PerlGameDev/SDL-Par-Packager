@@ -1,0 +1,6 @@
+use strict;
+use warnings;
+
+use SDL::Par::Packager;
+
+SDL::Par::Packager::pack( @ARGS );
