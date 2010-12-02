@@ -3,6 +3,8 @@ package SDL::Par::Packager;
 use warnings;
 use strict;
 
+use Getopt::Long;
+
 =head1 NAME
 
 SDL::Par::Packager - Package SDL applications
@@ -18,25 +20,18 @@ our $VERSION = '0.01';
 
 =head1 SYNOPSIS
 
-Quick summary of what the module does.
-
-Perhaps a little code snippet.
+Make a script as below to package as needed.
 
     use SDL::Par::Packager;
 
-    my $foo = SDL::Par::Packager->new();
-    ...
-
-=head1 EXPORT
-
-A list of functions that can be exported.  You can delete this section
-if you don't export anything, such as for a purely object-oriented module.
+    SDL::Par::Packager::pack(@ARGS);
+   
 
 =head1 SUBROUTINES/METHODS
 
 =head2 pack
 
-Verify input and package the game
+Verify input and package the app
 
 =cut
 
